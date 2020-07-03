@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<script src="https://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/index.css">
+
+<body class="bgimg-1" id="home">
+
+  <!-- Navbar (fixed to the top) -->
+  <div class="control">
+    <div class="w3-top ">
+      <div class="w3-bar  w3-card main-nav" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide">
+          <img src="img/logo-1.PNG" alt="logo" width="70px" style="border-radius: 50%;">
+        </a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-margin-top w3-hide-small nav">
+
+          <a href="index.html" class="w3-bar-item active">HOME</a>
+          <a href="dash.html" class="w3-bar-item ">DASHBOARD</a>
+          <span class="w3-bar-item bar-t " onclick="document.getElementById('contact').style.display='block'"> CONTACT
+          </span>
+          <a href="about.html" class="w3-bar-item ">ABOUT</a>
+          <a href="register.html" class="w3-bar-item ">REGISTER</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium bars"
+          onclick="w3_open()">
+          &#9776;
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display:none" id="mySidebar">
+
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+      <a href="dash.html" onclick="w3_close()" class="w3-bar-item w3-button">DASHBOARD</a>
+
+      <a onclick="view()" class="w3-bar-item w3-button">CONTACT</a>
+
+      <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+
+      <a href="register.html" onclick="w3_close()" class="w3-bar-item w3-button">REGISTER</a>
+
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class=" w3-display-container w3-grayscale-min w3-mobile">
+
+      <div class="w3-text-white space ">
+
+        <span class="w3-jumbo name w3-center cor">NULGE</span>
+
+        <br>
+
+        <span class="small-l">THRIFTS & LOANS MULTI-PURPOSE COOPERATIVE SOCIETY LIMITED.
+        </span>
+
+        <br>
+
+        <span class="smaller-l">
+          Best plathform to lend and save your money
+        </span>
+
+        <p>
+          <a href="register.html" class="  w3-padding w3-large w3-margin-top button w3-left"> Register</a>
+          <span>
+            <a href="sign-in_page.html" class=" w3-padding w3-large w3-margin-top button w3-right"> sign in</a>
+          </span>
+        </p>
+
+      </div>
+
+    </header>
+  </div>
+  <!------------- CONTACT PAGE ------------>
+  <section class="contact">
+    <div id="contact" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4">
+
+        <header class="w3-container w3-teal">
+
+
+          <span onclick="document.getElementById('contact').style.display='none'"
+            class="w w3-large w3-display-topright close ">&times;</span>
+          <h2 class="w3-center">Contact us </h2>
+        </header>
+
+        <div class="w3-container cont">
+          <form action="" method="POST" class="" class="">
+            <p>
+              <label for="name"> Your Name</label>
+              <br>
+              <input type="text" name="name" id="name">
+            </p>
+
+            <p>
+              <label for="mail"> Your E-mail </label>
+              <br>
+              <input type="email" name="email" id="mail">
+            </p>
+
+            <p>
+              <label for="number"> Your Phone number </label>
+              <br>
+              <input type="number" name="num" id="number">
+            </p>
+
+            <p>
+              <label for="sms"> Your Message </label>
+              <br>
+              <textarea type="text" name="sms" col="1" rows="1" id="sms"> </textarea>
+            </p>
+            <button class="c_btn w3-btn w3-round-xlarge" type="submit">
+              Send Message
+            </button>
+
+            <!-- <div class="or">
+              <hr class="line">
+              or
+              <hr class="line">
+            </div> -->
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script>
+
+  </script>
+  <script src="home.js"></script>
+
+</body>
+
+</html>

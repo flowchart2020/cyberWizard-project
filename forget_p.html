@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget password</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body class="set">
+    <div class="smooth">
+        <div class="sub-f w3-margin w3-mobile">
+            <h2>What is my password?</h2>
+            <form action="#" method="post" class="forgot">
+                <h4> If you have forgotten your password you can reset it here</h4>
+
+                <input type="email" name="mail" required class="get" placeholder="E-mail Address" autofocus>
+
+
+                <button type="submit" class="w3-teal w3-btn btn">
+                    Send My Passowrd
+                </button>
+                <button type="button" class="w3-button w3-teal w3-round w3-hover-red w3-left" id="back" onclick="prv()">
+                    Back
+                </button>
+                <button type="button" class="w3-button w3-round w3-teal w3-hover-red w3-right">
+                    Cancel
+                </button>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        function prv() {
+            history.back()
+        }
+    </script>
+</body>
+
+</html>
