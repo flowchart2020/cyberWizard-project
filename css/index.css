@@ -98,21 +98,7 @@ color: #fff;
 
 
 
-@media screen and (max-width: 991px) {
-	.space{
-        width: 90%;
-        display: block;
-        margin:3em auto ;
-        padding: 35% 0 0 0;
-      line-height: 2.0;
-    }
-    .small-l{
-        font-size: 0.9em;
-    }
-    .smaller-l{
-        font-size: 0.5;
-    }
-}
+
 
 /******************** 
 FORGET PASSWORD 
@@ -236,3 +222,64 @@ ABOUT PAGE
      color: #C4302B;
      font-size: 600;
  }
+
+ 
+/********************
+DASHBoARD PAGE
+ ********************/
+ .board{
+       padding-top: 7em ;
+       text-align: center;
+ }
+.bal{
+    width:100%;
+    text-align: center;
+    padding: 20px;
+}
+.bal span{
+    font-size: 3em;
+}
+.board button{
+}
+.welcome{
+    font-weight: 600;
+    color: #C4302B;
+}
+.amount{
+    background-color: #fff;
+    margin-bottom: 4em;
+}
+.amount h4{
+    color: #C4302B;
+    font-weight: 800;
+}
+.date{
+    display: flex;
+    color: #C4302B;
+    justify-content: space-around;
+    background-color: #fff;
+    margin: 0;
+}
+.out{   
+}
+
+
+
+@media screen and (max-width: 991px) {
+	.space{
+        width: 90%;
+        display: block;
+        margin:3em auto ;
+        padding: 35% 0 0 0;
+      line-height: 2.0;
+    }
+    .small-l{
+        font-size: 0.9em;
+    }
+    .smaller-l{
+        font-size: 0.5;
+    }
+    .out{ 
+        width: 80% ;
+    }
+}
